@@ -49,3 +49,15 @@ function Constructor(name, lastName, state) {
 // Principle 4
 
 // code example for Explicit Binding
+
+var aboutMe ={
+  name: "Vitaliy",
+  age: 30,
+  lastName: "Mikhaylyuk"
+  };
+
+var greeting = function() {
+    console.log(`Hello ${this.name} ${this.lastName}, its nice to meet you!`)
+    };
+
+greeting.call(aboutMe);
